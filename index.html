@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ-technical-support</title>
+
+    <!-- Bootstrap CSS from jsDelivr -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/@rive-app/canvas@latest"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- external css link -->
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+
+    <!-- header section -->
+    <header class="position-relative">
+        <div class="container d-lg-block d-none">
+            <button class="logo-btn rounded-pill mt-4 py-1 px-2 border-0">
+                <img src="./assets/header-logo.png" alt="logo" width="150">
+            </button>
+        </div>
+        <nav class="navbar d-lg-block d-md-block d-none fixed-top">
+            <ul>
+                <li class="active">FAQ</li>
+                <li>Home</li>
+                <li>Buy or Rent</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+
+        <nav class="mobile-navbar fixed-top navbar-expand-lg py-3 px-md-5 d-lg-none d-md-none">
+            <div class="container-fluid gap-md-5">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/logo.png" alt="nav-logo" style="height: 31px;">
+                </a>
+                <span class="navbar-toggler border-0 bg-transparent" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <input id="checkbox" type="checkbox" />
+                    <label class="toggle" for="checkbox">
+                        <div id="bar1" class="bars"></div>
+                        <div id="bar2" class="bars"></div>
+                        <div id="bar3" class="bars"></div>
+                        <div id="bar4" class="bars"></div>
+                        <div id="bar5" class="bars"></div>
+                    </label>
+                </span>
+                <div class="collapse navbar-collapse text-center" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-md-5">
+                        <li class="nav-item mt-5">
+                            <a class="header-link text-decoration-none" aria-current="page" href="#">FAQ</a>
+                        </li>
+                        <li class="nav-item mt-3 mt-lg-0 mt-md-0">
+                            <a class="header-link text-decoration-none" href="#">Home</a>
+                        </li>
+                        <li class="nav-item mt-3 mt-lg-0 mt-md-0">
+                            <a class="header-link text-decoration-none" href="#">Buy or Rent</a>
+                        </li>
+                        <li class="nav-item mt-3 mt-lg-0 mt-md-0">
+                            <a class="header-link text-decoration-none" href="#">About</a>
+                        </li>
+                        <li class="nav-item mt-3 mt-lg-0 mt-md-0">
+                            <a class="header-link text-decoration-none" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main style="background-color: #ffffff;">
+
+        <section class="container pt-5 pb-3 d-lg-block d-md-block d-none">
+            <div class="row align-items-center">
+                <div class="col-10">
+                    <div class="title-text">Frequently Asked Questions ?</div>
+                    <div class="mt-3 sub-title-text">Get step-by-step guidance on setting up your account and listing
+                        properties.</div>
+                    <div class="sub-title-text">Start your journey with Realezi today.</div>
+                </div>
+                <div class="col-2">
+                    <img src="./assets/faq.png" alt="faq" height="190" width="190">
+                </div>
+            </div>
+        </section>
+
+        <section class="container d-lg-none d-md-none d-block pt-5 pb-4 top-section text-center">
+            <div class="title-text">Frequently Asked Questions</div>
+            <div class="sub-title-text mt-2">Get step-by-step guidance on setting up your account and listing
+                properties. Start your journey with Realezi today.</div>
+        </section>
+
+        <!-- secondary navbar for desktop view -->
+        <section class="container pb-3 d-none d-lg-block d-md-block">
+            <nav class="second-navbar-container">
+                <button class="scroll-left"><i class="fas fa-chevron-left fa-sm"></i></button>
+                <nav class="second-navbar">
+                    <ul id="nav-items">
+                        <li class="active" data-target="refer_earn_program_section">Refer and Earn Program</li>
+                        <li data-target="general_faq_section">General FAQs</li>
+                        <li data-target="login_signup_section">Login and Sign-up</li>
+                        <li data-target="about_realezi_section">About Realezi</li>
+                    </ul>
+                </nav>
+                <button class="scroll-right"><i class="fas fa-chevron-right fa-sm"></i></button>
+            </nav>
+        </section>
+
+        <!-- secondary navbar for mobile view -->
+        <section class="pb-3 d-lg-none d-md-none">
+            <nav class="second-navbar-container">
+                <button class="scroll-left"><i class="fas fa-chevron-left fa-sm"></i></button>
+                <nav class="second-navbar">
+                    <ul id="nav-items">
+                        <li class="active" data-target="refer_earn_program_section">Refer and Earn Program</li>
+                        <li data-target="general_faq_section">General FAQs</li>
+                        <li data-target="login_signup_section">Login and Sign-up</li>
+                        <li data-target="about_realezi_section">About Realezi</li>
+                    </ul>
+                </nav>
+                <button class="scroll-right"><i class="fas fa-chevron-right"></i></button>
+            </nav>
+        </section>
+
+        <section class="container py-lg-5 py-md-5 pb-5 pt-3 refer_earn_program_section" id="refer_earn_program_section" style="display: block;">
+            <div class="row">
+                <div class="col-lg-4 col-12 d-none d-lg-block d-md-block">
+                    <div class="left-side">
+                        <button class="left-side-back-btn text-start w-100 border-0 mb-3">
+                            <i class="fas fa-arrow-left me-2"></i> Back
+                        </button>
+                        <ul style="list-style-type: disc;" class="left_questions_ul">
+                            <li class="mt-3 left-side-points-text">What is Realezi, and how does it work?</li>
+                            <li class="mt-3 left-side-points-text">What qualifies as a successful referral?</li>
+                            <li class="mt-3 left-side-points-text"> Will I receive my referral reward in my bank account?</li>
+                            <li class="mt-3 left-side-points-text">Is there a limit to how many people I can refer?</li>
+                            <li class="mt-3 left-side-points-text">How do I track my referrals and rewards?</li>
+                            <li class="mt-3 left-side-points-text">What details do I need to provide for my referral?</li>
+                            <li class="mt-3 left-side-points-text">Can I refer buyers, sellers, or renters?</li>
+                            <li class="mt-3 left-side-points-text"> What are the possible reasons I may not receive a reward?
+                            </li>
+                            <li class="mt-3 left-side-points-text"> When will I receive my reward?
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-8 col-12 mt-4 mt-md-2 mt-lg-0 question_answers_containers">
+                    <div class="faq-question-text">Who can participate in the referral program?</div>
+                    <div class="secondary-text-color">Anyone can participate in the referral program.</div>
+                    <div class="faq-question-text">What qualifies as a successful referral?</div>
+                    <div class="secondary-text-color">A referral is considered successful once the deal is completed, and the transaction is finalized.</div>
+                    <div class="faq-question-text">Will I receive my referral reward in my bank account?</div>
+                    <div class="secondary-text-color">Yes, you will receive your referral reward directly in your bank account.</div>
+                    <div class="faq-question-text">Is there a limit to how many people I can refer?</div>
+                    <div class="secondary-text-color">No, there is no limit to the number of people you can refer.</div>
+                    <div class="faq-question-text">How do I track my referrals and rewards?</div>
+                    <div class="secondary-text-color">You can track all your referrals and rewards by visiting your profile via Login / Dashboard / Refer & Earn Tab.</div>
+                    <div class="faq-question-text">What details do I need to provide for my referral?</div>
+                    <div class="secondary-text-color">You need to provide the name, contact number, and specific requirements of the person you are referring.</div>
+                    <div class="faq-question-text">Can I refer buyers, sellers, or renters?</div>
+                    <div class="secondary-text-color">The referral program is only for buyers, not for sellers or renters.</div>
+                    <div class="faq-question-text">What are the possible reasons I may not receive a reward?</div>
+                    <div class="secondary-text-color">You may not receive a reward if the customer is already a Realezi client, if the deal isn’t finalized successfully, if the deal doesn’t close within three months, or due to any vendor-related issues beyond Realezi's control.</div>
+                    <div class="faq-question-text">When will I receive my reward?</div>
+                    <div class="secondary-text-color">You will receive your reward 90 days after the deal is successfully completed.</div>
+              
+                </div>
+            </div>
+        </section>
+        
+        <section class="container py-lg-5 py-md-5 pb-5 pt-3 general_faq_section" id="general_faq_section" style="display: none;">
+            <div class="row">
+                <div class="col-lg-4 col-12 d-none d-lg-block d-md-block">
+                    <div class="left-side">
+                        <button class="left-side-back-btn text-start w-100 border-0 mb-3">
+                            <i class="fas fa-arrow-left me-2"></i> Back
+                        </button>
+                        <ul style="list-style-type: disc;" class="left_questions_ul">
+                            <li class="mt-3 left-side-points-text">Can I customize the services I need?</li>
+                            <li class="mt-3 left-side-points-text">What is the brokerage fee?</li>
+                            <li class="mt-3 left-side-points-text">Is there a fee to be part of Realezi’s community?</li>
+                            <li class="mt-3 left-side-points-text">How will Realezi help if there are disputes between service providers and clients?</li>
+                            <li class="mt-3 left-side-points-text">Are there any warranties or guarantees on services?</li>
+                            <li class="mt-3 left-side-points-text">How credible are the vendors or businesses listed on Realezi?</li>
+                        </ul>
+                        
+                    </div>
+                </div>
+
+
+                <div class="col-lg-8 col-12 mt-4 mt-md-2 mt-lg-0 question_answers_containers">
+                    <div class="faq-question-text">Can I customize the services I need?</div>
+                    <div class="secondary-text-color">Yes, you can customize the services according to your needs.</div>
+                    
+                    <div class="faq-question-text">What is the brokerage fee?</div>
+                    <div class="secondary-text-color">Realezi works on the ZERO brokerage fee properties.</div>
+                    
+                    <div class="faq-question-text">Is there a fee to be part of Realezi’s community?</div>
+                    <div class="secondary-text-color">No, there is no fee to join Realezi's community.</div>
+                    
+                    <div class="faq-question-text">How will Realezi help if there are disputes between service providers and clients?</div>
+                    <div class="secondary-text-color">Realezi assists by facilitating communication between both parties to resolve any issues amicably. In circumstances of any disputes, only the vendors will be responsible.</div>
+                    
+                    <div class="faq-question-text">Are there any warranties or guarantees on services?</div>
+                    <div class="secondary-text-color">Warranties or guarantees are subject to the terms and conditions of the service providers.</div>
+                    
+                    <div class="faq-question-text">How credible are the vendors or businesses listed on Realezi?</div>
+                    <div class="secondary-text-color">All vendors undergo a verification process to ensure credibility.</div>
+                </div>
+                
+            </div>
+        </section>
+        
+        <section class="container py-lg-5 py-md-5 pb-5 pt-3 login_signup_section" id="login_signup_section">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-5">
+                    <div class="card privacy-card mb-3 align-items-center">
+                        <div class="card-body text-center">
+                            <div class="text-center">
+                                <img src="./assets/cards-icon/individual.png" alt="verify" class="card-image">
+                            </div>
+                            <h5 class="card-title mt-lg-4 mt-md-4 mt-2 text-nowrap">For Individuals</h5>
+                        </div>
+                        <div class="card-footer bg-transparent text-center align-items-center w-100 d-lg-block d-md-block d-block">
+                            <button class="border-0 bg-transparent mt-2 d-flex align-items-center justify-content-center mx-auto">
+                                View <span class="ms-2"><img src="./assets/icons/Arrow-icon.png" alt="arrow-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-lg-3 col-md-4 col-5">
+                    <div class="card privacy-card mb-3 align-items-center">
+                        <div class="card-body text-center">
+                            <div class="text-center">
+                                <img src="./assets/cards-icon/builder.png" alt="verify" class="card-image">
+                            </div>
+                            <h5 class="card-title mt-lg-4 mt-md-4 mt-2 text-nowrap">For Builders</h5>
+                        </div>
+                        <div class="card-footer bg-transparent text-center align-items-center w-100 d-lg-block d-md-block d-block">
+                            <button class="border-0 bg-transparent mt-2 d-flex align-items-center justify-content-center mx-auto">
+                                View <span class="ms-2"><img src="./assets/icons/Arrow-icon.png" alt="arrow-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-lg-3 col-md-4 col-5">
+                    <div class="card privacy-card mb-3 align-items-center">
+                        <div class="card-body text-center">
+                            <div class="text-center">
+                                <img src="./assets/cards-icon/vendor.png" alt="verify" class="card-image">
+                            </div>
+                            <h5 class="card-title mt-lg-4 mt-md-4 mt-2 text-nowrap">For Vendors</h5>
+                        </div>
+                        <div class="card-footer bg-transparent text-center align-items-center w-100 d-lg-block d-md-block d-block">
+                            <button class="border-0 bg-transparent mt-2 d-flex align-items-center justify-content-center mx-auto">
+                                View <span class="ms-2"><img src="./assets/icons/Arrow-icon.png" alt="arrow-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+                <!-- For Individuals FAQ Section -->
+                <section class="container py-lg-5 py-md-5 pb-5 pt-3 individuals_faq_section" id="individuals_faq_section" style="display: none;">
+                    <div class="row">
+                        <div class="col-lg-4 col-12 d-block d-lg-block d-md-block">
+                            <div class="left-side">
+                                <button class="left-side-back-btn text-start w-100 border-0 mb-3">
+                                    <i class="fas fa-arrow-left me-2"></i> Back
+                                </button>
+                                <ul style="list-style-type: disc;" class="left_questions_ul">
+                                    <!-- Custom FAQ questions for Individuals can go here -->
+                                    <ul style="list-style-type: disc;" class="left_questions_ul">
+                                        <li class="mt-3 left-side-points-text">How do I create an account?</li>
+                                        <li class="mt-3 left-side-points-text">Is there any brokerage?</li>
+                                        <li class="mt-3 left-side-points-text">Is my personal information secure?</li>
+                                        <li class="mt-3 left-side-points-text">How can I get assistance during the process?</li>
+                                        <li class="mt-3 left-side-points-text">Is there a mobile application for Realezi?</li>
+                                        <li class="mt-3 left-side-points-text">How does Realezi assist me throughout the journey?</li>
+                                        <li class="mt-3 left-side-points-text">Can I delete my account if I no longer need it?</li>
+                                        <li class="mt-3 left-side-points-text">Can I save my favorite properties?</li>
+                                        <li class="mt-3 left-side-points-text">What services can I get access to?</li>
+                                        <li class="mt-3 left-side-points-text">Can I update my profile details after signing up?</li>
+                                        <li class="mt-3 left-side-points-text">Will I be able to track my homeownership journey?</li>
+                                        <li class="mt-3 left-side-points-text">What do we mean by individuals?</li>
+                                    </ul>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    
+                            <!-- Custom FAQ answers for Individuals can go here -->
+                            <div class="col-lg-8 col-12 mt-4 mt-md-2 mt-lg-0 question_answers_containers">
+                                <div class="faq-question-text">How do I create an account?</div>
+                                <div class="secondary-text-color">To create an account, sign up on the platform, go to your profile, complete all the required details, and verify your information.</div>
+                                
+                                <div class="faq-question-text">Is there any brokerage?</div>
+                                <div class="secondary-text-color">No, there is no brokerage.</div>
+                                
+                                <div class="faq-question-text">Is my personal information secure?</div>
+                                <div class="secondary-text-color">Yes, your personal information is secure with Realezi.</div>
+                                
+                                <div class="faq-question-text">How can I get assistance during the process?</div>
+                                <div class="secondary-text-color">Go to your dashboard, click on “Connect with DRM,” and request a call back. Your Dedicated Relationship Manager (DRM) will assist you.</div>
+                                
+                                <div class="faq-question-text">Is there a mobile application for Realezi?</div>
+                                <div class="secondary-text-color">Yes, Realezi has a mobile application.</div>
+                                
+                                <div class="faq-question-text">How does Realezi assist me throughout the journey?</div>
+                                <div class="secondary-text-color">Realezi helps you through the entire process, from understanding your requirements to fulfilling them.</div>
+                                
+                                <div class="faq-question-text">Can I delete my account if I no longer need it?</div>
+                                <div class="secondary-text-color">Yes, you can delete your account.</div>
+                                
+                                <div class="faq-question-text">Can I save my favorite properties?</div>
+                                <div class="secondary-text-color">Yes, you can save your favorite properties.</div>
+                                
+                                <div class="faq-question-text">What services can I get access to?</div>
+                                <div class="secondary-text-color">You can access services related to buying, selling, solar panel, interior design, architectural, legal aid, financing, and mover and packers.</div>
+                                
+                                <div class="faq-question-text">Can I update my profile details after signing up?</div>
+                                <div class="secondary-text-color">Yes, you can update your profile details after signing up.</div>
+                                
+                                <div class="faq-question-text">Will I be able to track my homeownership journey?</div>
+                                <div class="secondary-text-color">Yes, you can track your journey on your dashboard.</div>
+                                
+                                <div class="faq-question-text">What do we mean by individuals?</div>
+                                <div class="secondary-text-color">People who want to buy or sell properties or avail services at individual capacity.</div>
+                            </div>
+                    </div>
+                </section>
+
+                <!-- For Builders FAQ Section -->
+                <section class="container py-lg-5 py-md-5 pb-5 pt-3 builders_faq_section" id="builders_faq_section" style="display: none;">
+                    <div class="row">
+                        <div class="col-lg-4 col-12 d-block d-lg-block d-md-block">
+                            <div class="left-side">
+                                <button class="left-side-back-btn text-start w-100 border-0 mb-3">
+                                    <i class="fas fa-arrow-left me-2"></i> Back
+                                </button>
+                                <ul style="list-style-type: disc;" class="left_questions_ul">
+                                    <!-- Custom FAQ questions for Builders can go here -->
+                                    <ul style="list-style-type: disc;" class="left_questions_ul">
+                                        <li class="mt-3 left-side-points-text">Does Realezi provide a dashboard to analyze our performance?</li>
+                                        <li class="mt-3 left-side-points-text">How does Realezi verify business accounts?</li>
+                                        <li class="mt-3 left-side-points-text">What kind of support does Realezi provide to businesses?</li>
+                                        <li class="mt-3 left-side-points-text">How many properties can I list on Realezi?</li>
+                                        <li class="mt-3 left-side-points-text">How can I respond to inquiries from potential buyers or tenants?</li>
+                                        <li class="mt-3 left-side-points-text">What documents do I need to verify my account?</li>
+                                    </ul>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+        
+                            <!-- Custom FAQ answers for Builders can go here -->
+                            <div class="col-lg-8 col-12 mt-4 mt-md-2 mt-lg-0 question_answers_containers">
+                                <div class="faq-question-text">Does Realezi provide a dashboard to analyze our performance?</div>
+                                <div class="secondary-text-color">Yes, Realezi provides a dashboard where builders can analyze their performance.</div>
+                            
+                                <div class="faq-question-text">How does Realezi verify business accounts?</div>
+                                <div class="secondary-text-color">Realezi verifies business accounts through its own KYC verification process.</div>
+                            
+                                <div class="faq-question-text">What kind of support does Realezi provide to businesses?</div>
+                                <div class="secondary-text-color">Realezi helps expedite site visits, provides add-on services, and offers end-to-end assistance during the selling process.</div>
+                            
+                                <div class="faq-question-text">How many properties can I list on Realezi?</div>
+                                <div class="secondary-text-color">There is no limit to the number of properties you can list.</div>
+                            
+                                <div class="faq-question-text">How can I respond to inquiries from potential buyers or tenants?</div>
+                                <div class="secondary-text-color">All inquiries will be generated on your dashboard, where you can access and respond to them.</div>
+                            
+                                <div class="faq-question-text">What documents do I need to verify my account?</div>
+                                <div class="secondary-text-color">You will need a GST certificate, Aadhaar card, verified phone number, email ID, and address proof.</div>
+                            </div>
+                    </div>
+                </section>
+
+                <!-- For Vendors FAQ Section -->
+                <section class="container py-lg-5 py-md-5 pb-5 pt-3 vendors_faq_section" id="vendors_faq_section" style="display: none;">
+                    <div class="row">
+                        <div class="col-lg-4 col-12 d-block d-lg-block d-md-block">
+                            <div class="left-side">
+                                <button class="left-side-back-btn text-start w-100 border-0 mb-3">
+                                    <i class="fas fa-arrow-left me-2"></i> Back
+                                </button>
+                                <ul style="list-style-type: disc;" class="left_questions_ul">
+                                    <!-- Custom FAQ questions for Vendors can go here -->
+                                    <ul style="list-style-type: disc;" class="left_questions_ul">
+                                        <li class="mt-3 left-side-points-text">How can I increase my chances of getting leads?</li>
+                                        <li class="mt-3 left-side-points-text">Can I update my service offerings or pricing?</li>
+                                        <li class="mt-3 left-side-points-text">How can Realezi help me grow?</li>
+                                        <li class="mt-3 left-side-points-text">What is the fee for listing services on Realezi?</li>
+                                        <li class="mt-3 left-side-points-text">How can I manage my leads?</li>
+                                    </ul>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    
+                            <!-- Custom FAQ answers for Vendors can go here -->
+                            <div class="col-lg-8 col-12 mt-4 mt-md-2 mt-lg-0 question_answers_containers">
+                                <div class="faq-question-text">How can I increase my chances of getting leads?</div>
+                                <div class="secondary-text-color">You can increase your chances by posting all necessary information, uploading relevant documents, and providing videos or previous work examples.</div>
+                                
+                                <div class="faq-question-text">Can I update my service offerings or pricing?</div>
+                                <div class="secondary-text-color">Yes, you can update your service offerings and pricing at any time.</div>
+                                
+                                <div class="faq-question-text">How can Realezi help me grow?</div>
+                                <div class="secondary-text-color">Realezi connects you with verified customers and helps you grow your business through a partnership model.</div>
+                                
+                                <div class="faq-question-text">What is the fee for listing services on Realezi?</div>
+                                <div class="secondary-text-color">Currently, there is no upfront fee as Realezi works on a channel partnership model.</div>
+                                
+                                <div class="faq-question-text">How can I manage my leads?</div>
+                                <div class="secondary-text-color">You can manage your leads through your dashboard.</div>
+                            </div>
+                    </div>
+                </section>
+
+        
+        <section class="container py-lg-5 py-md-5 pb-5 pt-3 about_realezi_section" id="about_realezi_section" style="display: none;">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-5">
+                            <div class="card privacy-card mb-3 align-items-center">
+                                <div class="card-body text-center">
+                                    <div class="text-center">
+                                        <img src="./assets/cards-icon/services.png" alt="verify" class="card-image">
+                                    </div>
+                                    <h5 class="card-title mt-lg-4 mt-md-4 mt-2 text-nowrap">Services</h5>
+                                </div>
+                                <div class="card-footer bg-transparent text-center align-items-center w-100 d-lg-block d-md-block d-block">
+                                    <button class="border-0 bg-transparent mt-2 d-flex align-items-center justify-content-center mx-auto">
+                                        View <span class="ms-2"><img src="./assets/icons/Arrow-icon.png" alt="arrow-icon"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="col-lg-3 col-md-4 col-5">
+                            <div class="card privacy-card mb-3 align-items-center">
+                                <div class="card-body text-center">
+                                    <div class="text-center">
+                                        <img src="./assets/cards-icon/property-listing.png" alt="verify" class="card-image">
+                                    </div>
+                                    <h5 class="card-title mt-lg-4 mt-md-4 mt-2 text-nowrap">Property Listings/ Details</h5>
+                                </div>
+                                <div class="card-footer bg-transparent text-center align-items-center w-100 d-lg-block d-md-block d-block">
+                                    <button class="border-0 bg-transparent mt-2 d-flex align-items-center justify-content-center mx-auto">
+                                        View <span class="ms-2"><img src="./assets/icons/Arrow-icon.png" alt="arrow-icon"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+                
+                <!-- For about realezi services Section -->
+                <section class="container py-lg-5 py-md-5 pb-5 pt-3 individuals_faq_section" id="about_realezi_services_section" style="display: none;">
+                    <div class="row">
+                        <div class="col-lg-4 col-12 d-block d-lg-block d-md-block">
+                            <div class="left-side">
+                                <button class="left-side-back-btn text-start w-100 border-0 mb-3 back_to_about_realezi_services_section">
+                                    <i class="fas fa-arrow-left me-2"></i> Back
+                                </button>
+                                <ul style="list-style-type: disc;" class="left_questions_ul">
+                                    <li class="mt-3 left-side-points-text">How do I create an account?</li>
+                                    <!-- More questions for individuals... -->
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-12 mt-4 mt-md-2 mt-lg-0 question_answers_containers">
+                            <div class="faq-question-text">How do I create an account?</div>
+                            <div class="secondary-text-color">To create an account, sign up on the platform, go to your profile, complete all the required details, and verify your information.</div>
+                            <!-- More answers for individuals... -->
+                        </div>
+                    </div>
+                </section>
+                <!-- For about realezi property listing Section -->
+                <section class="container py-lg-5 py-md-5 pb-5 pt-3 builders_faq_section" id="about_realezi_property_Listing_section" style="display: none;">
+                    <div class="row">
+                        <div class="col-lg-4 col-12 d-block d-lg-block d-md-block">
+                            <div class="left-side">
+                                <button class="left-side-back-btn text-start w-100 border-0 mb-3 back_to_about_realezi_services_section">
+                                    <i class="fas fa-arrow-left me-2"></i> Back
+                                </button>
+                                <ul style="list-style-type: disc;" class="left_questions_ul">
+                                    <li class="mt-3 left-side-points-text">Does Realezi provide a dashboard to analyze our performance?</li>
+                                    <!-- More questions for builders... -->
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-12 mt-4 mt-md-2 mt-lg-0 question_answers_containers">
+                            <div class="faq-question-text">Does Realezi provide a dashboard to analyze our performance?</div>
+                            <div class="secondary-text-color">Yes, Realezi provides a dashboard where builders can analyze their performance.</div>
+                            <!-- More answers for builders... -->
+                        </div>
+                    </div>
+                </section>
+                
+        
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer mt-5">
+        <div class="container">
+            <div class="upper-footer">
+                <div class="columns d-flex align-items-start justify-content-between my-3">
+                    <div style="margin-right: 10px;">
+                        <img src="./assets/logo2.png" width="150px" class="mb-3" />
+                        <h3>
+                            Click.<br>
+                            Connect.<br>
+                            Close.<br>
+                        </h3>
+                        <button class="white-btn">Try it yourself</button>
+                    </div>
+                    <div class="">
+                        <div>
+                            <h4 class="d-flex align-items-center">Company <span class="d-block d-sm-none mx-2 mb-1"><svg
+                                        width="14" height="10" viewBox="0 0 12 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.41 0.590088L6 5.17009L10.59 0.590088L12 2.00009L6 8.00009L0 2.00009L1.41 0.590088Z"
+                                            fill="#ffffff" />
+                                    </svg></span></h4>
+                            <ul>
+                                <li>About us</li>
+                                <li>Blog</li>
+                                <li>Career</li>
+                                <li>Contact support</li>
+                                <li>Get in touch</li>
+                                <li>FAQs</li>
+                                <button
+                                    class="align-items-center justify-content-center blue-btn mt-3 d-none d-sm-block">
+                                    <p class="mx-2">We are hiring</p>
+                                    <canvas id="partyPopper"></canvas>
+                                </button>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="playStore-btn larger-screen d-flex align-items-center justify-content-between">
+                        <a href="#" class="googlePlay-button" id="launch-button">
+                            <span class="icon">
+                                <svg fill="currentcolor" viewBox="-52.01 0 560.035 560.035"
+                                    xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                                    </g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path
+                                            d="M380.844 297.529c.787 84.752 74.349 112.955 75.164 113.314-.622 1.988-11.754 40.191-38.756 79.652-23.343 34.117-47.568 68.107-85.731 68.811-37.499.691-49.557-22.236-92.429-22.236-42.859 0-56.256 21.533-91.753 22.928-36.837 1.395-64.889-36.891-88.424-70.883-48.093-69.53-84.846-196.475-35.496-282.165 24.516-42.554 68.328-69.501 115.882-70.192 36.173-.69 70.315 24.336 92.429 24.336 22.1 0 63.59-30.096 107.208-25.676 18.26.76 69.517 7.376 102.429 55.552-2.652 1.644-61.159 35.704-60.523 106.559M310.369 89.418C329.926 65.745 343.089 32.79 339.498 0 311.308 1.133 277.22 18.785 257 42.445c-18.121 20.952-33.991 54.487-29.709 86.628 31.421 2.431 63.52-15.967 83.078-39.655">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </span>
+                            <span class="texts">
+                                <span class="text-1">Download form</span>
+                                <span class="text-2">App store</span>
+                            </span>
+                        </a>
+                        <a href="#" class="appstore-button">
+                            <svg viewBox="0 0 512 512" class="icon" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M99.617 8.057a50.191 50.191 0 00-38.815-6.713l230.932 230.933 74.846-74.846L99.617 8.057zM32.139 20.116c-6.441 8.563-10.148 19.077-10.148 30.199v411.358c0 11.123 3.708 21.636 10.148 30.199l235.877-235.877L32.139 20.116zM464.261 212.087l-67.266-37.637-81.544 81.544 81.548 81.548 67.273-37.64c16.117-9.03 25.738-25.442 25.738-43.908s-9.621-34.877-25.749-43.907zM291.733 279.711L60.815 510.629c3.786.891 7.639 1.371 11.492 1.371a50.275 50.275 0 0027.31-8.07l266.965-149.372-74.849-74.847z">
+                                </path>
+                            </svg>
+                            <span class="texts">
+                                <span class="text-1">GET IT ON</span>
+                                <span class="text-2">Google Play</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div>
+                        <h4 class="d-flex align-items-center">Solutions<span class="d-block d-sm-none mx-2 mb-1"><svg
+                                    width="14" height="10" viewBox="0 0 12 8" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1.41 0.590088L6 5.17009L10.59 0.590088L12 2.00009L6 8.00009L0 2.00009L1.41 0.590088Z"
+                                        fill="#ffffff" />
+                                </svg></span></h4>
+                        <div class="d-flex">
+                            <ul>
+                                <li>Find a Right Property</li>
+                                <li>Sell or Rent Your Property</li>
+                                <li>Build Your Home From Scratch </li>
+                                <li>Interior Designing & Decor</li>
+                                <li>Solar Panel</li>
+                                <li>Home Loans</li>
+                                <li class="d-block d-sm-none">Legal Aid </li>
+                                <li class="d-block d-sm-none">Porter Services</li>
+                                <li class="d-block d-sm-none">For Business</li>
+                            </ul>
+                            <ul class="px-3 d-none d-sm-block">
+                                <li>Legal Aid </li>
+                                <li>Porter Services</li>
+                                <li>For Business</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="d-flex align-items-center">Community<span class="d-block d-sm-none mx-2 mb-1"><svg
+                                    width="14" height="10" viewBox="0 0 12 8" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1.41 0.590088L6 5.17009L10.59 0.590088L12 2.00009L6 8.00009L0 2.00009L1.41 0.590088Z"
+                                        fill="#ffffff" />
+                                </svg></span></h4>
+                        <ul>
+                            <button class="align-items-center blue-btn refer-btn mt-3 d-none d-sm-block">
+                                <p class="mx-2">Refer & Earn</p>
+                                <lottie-player src="./assets/animation-files/fire-animation.json"
+                                    background="transparent" speed="1" style="width: 25px; height: 25px" loop
+                                    autoplay></lottie-player>
+                            </button>
+                            <li>Realezi Community</li>
+                            <li>Customers</li>
+                        </ul>
+                    </div>
+                    <div class="d-block d-sm-none">
+                        <h4 class="d-flex align-items-center">Others<span class="d-block d-sm-none mx-2 mb-1"><svg
+                                    width="14" height="10" viewBox="0 0 12 8" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1.41 0.590088L6 5.17009L10.59 0.590088L12 2.00009L6 8.00009L0 2.00009L1.41 0.590088Z"
+                                        fill="#ffffff" />
+                                </svg></span></h4>
+                        <div class="position-relative">
+                            <ul>
+                                <li>Privacy policies</li>
+                                <li>Terms and conditions</li>
+                                <li>Disclaimer</li>
+                                <li class="text-right">
+                                    <button class="align-items-center justify-content-center blue-btn">
+                                        <p class="mx-2">We are hiring</p>
+                                        <canvas id="partyPopper2"></canvas>
+                                    </button>
+                                    <button class="align-items-center blue-btn refer-btn mt-3">
+                                        <p class="mx-2">Refer & Earn</p>
+                                        <lottie-player src="./assets/animation-files/fire-animation.json"
+                                            background="transparent" speed="1" style="width: 25px; height: 25px" loop
+                                            autoplay></lottie-player>
+                                    </button>
+                                </li>
+                                <li class="d-flex align-items-center justify-content-center"><a href="#"
+                                        class="googlePlay-button" id="launch-button">
+                                        <span class="icon">
+                                            <svg fill="currentcolor" viewBox="-52.01 0 560.035 560.035"
+                                                xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
+                                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                </g>
+                                                <g id="SVGRepo_iconCarrier">
+                                                    <path
+                                                        d="M380.844 297.529c.787 84.752 74.349 112.955 75.164 113.314-.622 1.988-11.754 40.191-38.756 79.652-23.343 34.117-47.568 68.107-85.731 68.811-37.499.691-49.557-22.236-92.429-22.236-42.859 0-56.256 21.533-91.753 22.928-36.837 1.395-64.889-36.891-88.424-70.883-48.093-69.53-84.846-196.475-35.496-282.165 24.516-42.554 68.328-69.501 115.882-70.192 36.173-.69 70.315 24.336 92.429 24.336 22.1 0 63.59-30.096 107.208-25.676 18.26.76 69.517 7.376 102.429 55.552-2.652 1.644-61.159 35.704-60.523 106.559M310.369 89.418C329.926 65.745 343.089 32.79 339.498 0 311.308 1.133 277.22 18.785 257 42.445c-18.121 20.952-33.991 54.487-29.709 86.628 31.421 2.431 63.52-15.967 83.078-39.655">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                        </span>
+                                        <span class="texts">
+                                            <span class="text-1">Download form</span>
+                                            <span class="text-2">App store</span>
+                                        </span>
+                                    </a>
+                                    <a href="#" class="appstore-button">
+                                        <svg viewBox="0 0 512 512" class="icon" fill="currentColor"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M99.617 8.057a50.191 50.191 0 00-38.815-6.713l230.932 230.933 74.846-74.846L99.617 8.057zM32.139 20.116c-6.441 8.563-10.148 19.077-10.148 30.199v411.358c0 11.123 3.708 21.636 10.148 30.199l235.877-235.877L32.139 20.116zM464.261 212.087l-67.266-37.637-81.544 81.544 81.548 81.548 67.273-37.64c16.117-9.03 25.738-25.442 25.738-43.908s-9.621-34.877-25.749-43.907zM291.733 279.711L60.815 510.629c3.786.891 7.639 1.371 11.492 1.371a50.275 50.275 0 0027.31-8.07l266.965-149.372-74.849-74.847z">
+                                            </path>
+                                        </svg>
+                                        <span class="texts">
+                                            <span class="text-1">GET IT ON</span>
+                                            <span class="text-2">Google Play</span>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lower-footer">
+                <div class="lower-upper d-none d-sm-block">
+                    <ul class="d-flex align-items-center justify-content-center">
+                        <li>Privacy policies</li>
+                        <li>Terms and conditions</li>
+                        <li>Disclaimer</li>
+                    </ul>
+                </div>
+                <div class="lower-bottom d-flex align-items-center justify-content-between">
+                    <p class="text-center">©2024 Realezi. All rights reserved</p>
+                    <p>
+                        Made with love <img src="./assets/heart.png" width="15px" /> from
+                        Realezi
+                    </p>
+                    <div class="socials-container">
+                        <a href="https://www.facebook.com/profile.php?id=100095528529674&mibextid=ZbWKwL"
+                            target="_blank" class="fb-btn social-btn">
+                            <img src="./assets/fb.png" width="18px" />
+                            <span class="text">Facebook</span>
+                        </a>
+                        <a href="https://www.linkedin.com/company/realezi/" target="_blank"
+                            class="linkedin-btn social-btn">
+                            <img src="./assets/linkedin.png" width="18px" />
+                            <span class="text">LinkedIn</span>
+                        </a>
+                        <a href="https://www.instagram.com/realezi_?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D"
+                            target="_blank" class="insta-btn social-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" class="svgIcon">
+                                <path
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                                </path>
+                            </svg>
+                            <span class="text">Instagram</span>
+                        </a>
+                        <a href="https://www.youtube.com/@Realezi" target="_blank" class="youtube-btn social-btn">
+                            <img src="./assets/youtube.png" width="10px" />
+                            <span class="text">Youtube</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/rive-canvas@latest/rive.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script> -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="./navbar.js"></script>
+    <script src="./index.js"></script>
+    <script defer src="./footer.js"></script>
+    <script>
+        // Function to handle the active class and section visibility
+        document.addEventListener('DOMContentLoaded', function () {
+            const navItems = document.querySelectorAll('#nav-items li');
+            const sections = document.querySelectorAll('section.container');
+        
+            navItems.forEach(item => {
+                item.addEventListener('click', function () {
+                    // Remove active class from all li elements
+                    navItems.forEach(nav => nav.classList.remove('active'));
+        
+                    // Add active class to the clicked li element
+                    this.classList.add('active');
+        
+                    // Get the target section from the data attribute
+                    const targetSectionId = this.getAttribute('data-target');
+        
+                    // Hide all sections
+                    sections.forEach(section => section.style.display = 'none');
+        
+                    // Show the target section
+                    document.getElementById(targetSectionId).style.display = 'block';
+                });
+            });
+        });
+
+    document.addEventListener('DOMContentLoaded', function () {
+    // Get all the View buttons and the sections
+    const viewButtons = document.querySelectorAll('.card-footer button, .privacy-card button');
+    const loginSignupSection = document.getElementById('login_signup_section');
+    
+    // Individual FAQ sections for each category
+    const individualsFaqSection = document.getElementById('individuals_faq_section');
+    const buildersFaqSection = document.getElementById('builders_faq_section');
+    const vendorsFaqSection = document.getElementById('vendors_faq_section');
+
+    // About Realezi FAQ sections
+    const aboutRealeziSection = document.getElementById('about_realezi_section');
+    const aboutRealeziServicesSection = document.getElementById('about_realezi_services_section');
+    const aboutRealeziPropertyListingSection = document.getElementById('about_realezi_property_Listing_section');
+
+    // Get all Back buttons in FAQ sections
+    const backButtons = document.querySelectorAll('.left-side-back-btn');
+    const aboutRealeziBackButtons = document.querySelectorAll('.back_to_about_realezi_services_section');
+
+    // Hide all sections initially
+    function hideAllSections() {
+        individualsFaqSection.style.display = 'none';
+        buildersFaqSection.style.display = 'none';
+        vendorsFaqSection.style.display = 'none';
+        loginSignupSection.style.display = 'none';
+        aboutRealeziSection.style.display = 'none';
+        aboutRealeziServicesSection.style.display = 'none';
+        aboutRealeziPropertyListingSection.style.display = 'none';
+    }
+
+    // Show the corresponding section based on button index
+    function showSection(index) {
+        if (index === 0) {
+            individualsFaqSection.style.display = 'block'; // Show Individuals FAQ section
+        } else if (index === 1) {
+            buildersFaqSection.style.display = 'block'; // Show Builders FAQ section
+        } else if (index === 2) {
+            vendorsFaqSection.style.display = 'block'; // Show Vendors FAQ section
+        } else if (index === 3) {
+            aboutRealeziServicesSection.style.display = 'block'; // Show About Realezi Services section
+        } else if (index === 4) {
+            aboutRealeziPropertyListingSection.style.display = 'block'; // Show About Realezi Property Listing section
+        }
+    }
+
+    // Add event listeners for each "View" button
+    viewButtons.forEach((button, index) => {
+        button.addEventListener('click', function () {
+            hideAllSections(); // Hide all sections first
+            showSection(index); // Show the relevant FAQ section
+        });
+    });
+
+    // Back button functionality to return to the login/signup section
+    backButtons.forEach((button) => {
+        button.addEventListener('click', function () {
+            hideAllSections(); // Hide all FAQ sections
+            loginSignupSection.style.display = 'block'; // Show login/signup section again
+        });
+    });
+    aboutRealeziBackButtons.forEach((button) => {
+        button.addEventListener('click', function () {
+            hideAllSections(); // Hide all FAQ sections
+            aboutRealeziSection.style.display = 'block'; // Show login/signup section again
+        });
+    });
+
+    // Initial display of login/signup section
+    loginSignupSection.style.display = 'block';
+});
+
+
+
+        </script>
+</body>
+
+</html>
